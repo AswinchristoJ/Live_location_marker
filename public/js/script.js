@@ -39,6 +39,7 @@ $(document).ready(() => {
             count = 0
             for (let key in data) {
                 count++
+                console.log(data[key])
                 value = value + `${data[key][1]}|flag-lg-4DBD33-${data[key][0]}`
                 if (count != Object.keys(data).length) {
                     value = value + '||'
