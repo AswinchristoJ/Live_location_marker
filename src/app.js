@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
     socket.emit('broad', coords)
 
     socket.on('disconnect', () => {
-        socket.broadcast.emit('userStatus', 'someone is disconnected')
+        socket.broadcast.emit('userStatus', `${coords[socket.id][0]} is disconnected`)
         delete coords[socket.id]
         console.log(coords)
         io.emit('broad', coords)
