@@ -46,7 +46,6 @@ $(document).ready(() => {
             }
 
             document.getElementsByTagName('iframe')[0].src = `https://www.mapquestapi.com/staticmap/v5/map?key=7qAHtUkSymItMvSGgAl9Ib1ji8wc6lkV&scalebar=true|bottom&banner=locations+of+those+online|sm-top&locations=${value}&zoom=12&size=1500,800`
-            console.log(document.getElementsByTagName('iframe')[0].src)
         }
 
     })
